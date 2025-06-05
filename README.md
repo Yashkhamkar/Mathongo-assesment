@@ -2,7 +2,6 @@
 # 📚 Chapter Performance Dashboard API
 
 A backend system built using **Node.js**, **Express.js**, **MongoDB**, and **Redis**, developed as part of the Backend Developer Task for MathonGo.
-
 ---
 
 ## 🚀 Features Implemented
