@@ -21,6 +21,7 @@ A backend system built using **Node.js**, **Express.js**, **MongoDB**, and **Red
 ✅ **Admin File Upload**:
 - Upload `.json` files (with schema validation)
 - Partial upload supported: success + failed entries returned
+- Requires admin authentication
 
 ✅ **Redis Caching**:
 - Cache for `GET /chapters` for 1 hour
