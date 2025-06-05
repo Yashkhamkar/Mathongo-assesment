@@ -1,6 +1,7 @@
+
 # 📚 Chapter Performance Dashboard API
 
-A backend system built using **Node.js**, **Express.js**, **MongoDB**, and **Redis**, developed as part of the Backend Developer  Task for MathonGo.
+A backend system built using **Node.js**, **Express.js**, **MongoDB**, and **Redis**, developed as part of the Backend Developer Task for MathonGo.
 
 ---
 
@@ -66,6 +67,10 @@ Fetch a chapter using its MongoDB `_id`.
 
 **Example:**
 
+```
+GET /api/v1/chapters/665ee6dd15d27f9f1fa0280e
+```
+
 ---
 
 ### 3. **POST /api/v1/chapters** (Admin Only)
@@ -78,6 +83,9 @@ Upload a `.json` file of chapter data.
 
 **Headers:**
 
+```
+x-admin-secret: yash123
+```
 
 **Body (form-data):**
 
@@ -85,7 +93,8 @@ Upload a `.json` file of chapter data.
 |-------|------|---------------------|
 | file  | File | Upload `.json` file |
 
-Example JSON:
+**Example JSON:**
+
 ```json
 [
   {
@@ -99,11 +108,25 @@ Example JSON:
     "isWeakChapter": true
   }
 ]
+```
 
-### 4.🧪 Postman Collection
-👉 Click to Open Collection: https://api.postman.com/collections/19647232-3d2c3775-6873-4335-a8c5-1c440852b39c?access_key=PMAT-01JWZW2FX3FG16BKNA4Y29CWXT
-🔐 Use header: x-admin-secret: yash123 for POST upload
+---
 
-### 5.⚙️ Deployment
-Hosted on AWS EC2 (Ubuntu)
-Auto-deploy with GitHub Actions on every main push
+## 🧪 Postman Collection
+
+👉 **Click to Open Collection**:  
+https://api.postman.com/collections/19647232-3d2c3775-6873-4335-a8c5-1c440852b39c?access_key=PMAT-01JWZW2FX3FG16BKNA4Y29CWXT
+
+🔐 Use header: `x-admin-secret: yash123` for `POST` upload.
+
+---
+
+## ⚙️ Deployment
+
+- Hosted on **AWS EC2 (Ubuntu)**
+- **Auto-deploy** with GitHub Actions on every push to `main`
+
+---
+
+
+---
