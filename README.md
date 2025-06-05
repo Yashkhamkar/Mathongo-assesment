@@ -99,10 +99,11 @@ Example JSON:
     "isWeakChapter": true
   }
 ]
-🧪 Postman Collection
+
+### 4.🧪 Postman Collection
 👉 Click to Open Collection: https://api.postman.com/collections/19647232-3d2c3775-6873-4335-a8c5-1c440852b39c?access_key=PMAT-01JWZW2FX3FG16BKNA4Y29CWXT
 🔐 Use header: x-admin-secret: yash123 for POST upload
 
-⚙️ Deployment
+### 5.⚙️ Deployment
 Hosted on AWS EC2 (Ubuntu)
 Auto-deploy with GitHub Actions on every main push
