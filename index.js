@@ -11,6 +11,11 @@ const port = process.env.PORT;
 app.use(cors());
 app.use(express.json());
 app.use(fileUpload());
+
+app.get("/api/v1", (req, res) => {
+  res.send("Welcome to the Chapter Management API");
+});
+
 app.use("/api/v1/chapters", chapterRoutes);
 
 connectDB();
